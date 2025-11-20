@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Fondo -->
+
+    <!-- Logo centrado -->
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.7"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="349dp"
+        android:layout_height="330dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/logo" />
+
+    <!-- Botón login -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="90dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@null"
+        android:textSize="20dp"
+        android:text="Log in"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textAllCaps="false" />
+
+
+    <!-- Texto register -->
+    <TextView
+        android:id="@+id/tvRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Don’t have an account? "
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/tvGoRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="-102dp"
+        android:layout_marginBottom="19dp"
+        android:layout_toRightOf="@id/tvRegister"
+        android:text="Register"
+        android:textColor="#FF9800"
+        android:textStyle="bold" />
+
+</RelativeLayout>
+
